@@ -5,7 +5,7 @@
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
 
-Hello, the problem of the day 002, is a problem recently posed by Twitter:
+Hello, the problem of the day 003, is a problem recently posed by Twitter:
 
 A palindrome is a sequence of characters that reads the same backwards and forwards. Given a string, s, find the longest palindromic substring in s.
 
