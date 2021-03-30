@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/KERBOUTE/100Dayscodechallenge)
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
-Hello, the problem of the day 002, is a problem recently posed by Facebook:
+Hello, the problem of the day 008, is a problem recently posed by Facebook:
 You are given a list of numbers, and a target number k. Return whether or not there are two numbers in the list that add up to k.
 
 ```
