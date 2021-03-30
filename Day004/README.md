@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/KERBOUTE/100Dayscodechallenge)
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
-Hello, the problem of the day 002, is a problem recently posed by Uber:
+Hello, the problem of the day 004, is a problem recently posed by Uber:
 
 Imagine you are building a compiler. Before running any code, the compiler must check that the parentheses in the program are balanced. Every opening bracket must have a corresponding closing bracket. We can approximate this using strings.
 
