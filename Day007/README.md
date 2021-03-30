@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/KERBOUTE/100Dayscodechallenge)
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
-Hello, the problem of the day 002, is a problem recently posed by Google:
+Hello, the problem of the day 007, is a problem recently posed by Google:
 
 Given a list of numbers with only 3 unique numbers (1, 2, 3), sort the list in O(n) time.
 
