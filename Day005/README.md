@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/KERBOUTE/100Dayscodechallenge)
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
-Hello, the problem of the day 002, is a problem recently posed by AirBNB:
+Hello, the problem of the day 005, is a problem recently posed by AirBNB:
 
 Given a sorted array, A, with possibly duplicated elements, find the indices of the first and last occurrences of a target element, x. Return -1 if the target is not found.
 
