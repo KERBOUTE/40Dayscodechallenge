@@ -4,7 +4,7 @@
 ![GitHub contributors](https://img.shields.io/github/contributors/KERBOUTE/100Dayscodechallenge)
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
-Hello, the problem of the day 002, is a problem recently posed by Google:
+Hello, the problem of the day 006, is a problem recently posed by Google:
 
 Given a singly-linked list, reverse the list. This can be done iteratively or recursively. Can you get both solutions?
 
