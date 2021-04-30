@@ -1,53 +1,31 @@
-# hit_counter_design
+# Count_sum_left_leaves
 ![Stars](https://img.shields.io/github/stars/KERBOUTE/100Dayscodechallenge?style=social)
 ![Forks](https://img.shields.io/github/forks/KERBOUTE/100Dayscodechallenge?style=social)
 ![GitHub contributors](https://img.shields.io/github/contributors/KERBOUTE/100Dayscodechallenge)
 ![Language](https://img.shields.io/github/languages/top/KERBOUTE/100Dayscodechallenge)
 
-Hello, the problem of the day 011, is a problem recently posed by Twitter:
+Hello, the problem of the day 011, is a problem recently posed by Amazon:
 
-Program to design a hit counter.
-It should support the following two operations: hit and getHits.
+Program to count and get sum of left leaf nodes in the binary tree.
 
-hit(timestamp) – Shows a hit at the given timestamp.
-getHits(timestamp) – Returns the number of hits received in the past 5 minutes (300 seconds) (from currentTimestamp).
-#### ASSUMPTIONS : 
-Each function accepts a timestamp parameter (in seconds granularity) and you may assume that calls are being made to the system in chronological order 
-(i.e. the timestamp is monotonically increasing). You may assume that the earliest timestamp starts at 1.
+We can take example for follwoing tree and visualize stack call :
+```
+#            1
+#          /  \
+#        2     3
+#       /  \
+#      4    5
+```
 
-### Examples:
+We can use any iterative traversal for traversing every node, and check if current.left.left is None and current.left.right is None, then
+we include its sum in the overall sum, and we do this for every current.left node.
 
-
-HitCounter counter = new HitCounter();
-
-// hit at timestamp 1.
-counter.hit(1);
-
-// hit at timestamp 2.
-counter.hit(2);
-
-// hit at timestamp 3.
-counter.hit(3);
-
-// get hits at timestamp 4, should return 3.
-counter.getHits(4);
-
-// hit at timestamp 300.
-counter.hit(300);
-
-// get hits at timestamp 300, should return 4.
-counter.getHits(300);
-
-// get hits at timestamp 301, should return 3.
-counter.getHits(301);
-
-### FIRST APPROACH : 
-We keep a simple ARRAY, more precisely resiazble array - vector (list), to fill the timestamps as they come in, and then for getting last 5min or 300 seconds, we subtract current timestamp from 300 to get range/duration, now keep moving the index from front till we get inside range.
-
-### SECOND APPROACH : 
-Also, now we can observe that too much space is wasted in above solution, because we are keeping non useful elements also in array.
-we need to remove these non useful array elements. So, we go for queue based approach : 
-Now, in queue, we keep only useful elements, and pop out all non useful elements.
+We can also use recursive approach to solve this , we go for every node, if the root is not None, then check if root.left is leaf node or not ,
+if it's leaf node, then we simply add the root.left.data to the res.
+Now, if it's the not the leaf node, then we recur for left sub tree. and we every recur for right sub tree.
+So, all in all, we recur for both left and right subtrees, but while we go for left, we need to check specifically for leav nodes. That's it.
+#### NOTE : HEre, simply recurrence relation like adding left leav(leftsubtree) + right leav(rightsubtree) will not work.
+#### TIME : 0(N), SPACE : 0(N).
 
 
 ## Contact
