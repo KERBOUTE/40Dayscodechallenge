@@ -1,2 +1,2 @@
-# 100Dayscodechallenge
+# 40Dayscodechallenge
  I will solve a problem of coding per day from different platforms
